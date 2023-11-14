@@ -1,0 +1,323 @@
+/* header */
+header {
+    background-color: #ffffff;
+    padding: 7px;
+}
+
+.hidden-header {
+    display: none;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Cor de fundo desejada */
+    padding: 7px; /* Alterado o valor do padding para 7px */
+    z-index: 999; /* Certifique-se de que está na parte superior */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Texto sob foto */
+
+.Novidade {
+    background: #f0f0f0;
+}
+
+.novi-container {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+}
+
+.fotodump {
+    position: relative;
+    display: inline-block;
+}
+
+.fotodump img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fotodump h1 {
+    margin-top: 90;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.txt1 {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 60%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 120px;
+    z-index: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* capa masculina */
+.fotomas {
+    display: flex;
+    justify-content: center;
+}
+
+/* video */
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.background-video {
+    width: 100%;
+    max-width: 1400px;
+    border-radius: 10px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.p1 {
+    padding-top: 25px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.p2 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.hoodie-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.comprar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.comprar:hover {
+    background-color: #333;
+}
+
+/* mostruario masculino*/
+.mostruario-container {
+    display: flex;
+}
+
+.item {
+    background-color: transparent;
+    min-width: 300px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ver {
+    background: linear-gradient(90deg, #0e0b3a, #231330);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.saiba-mais-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.saiba-mais-btn:hover {
+    background-color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+/* capa feminina */
+.fotofem {
+    display: flex;
+    justify-content: center;
+}
+
+/* mostruario feminino */
+.mostruariofem-container {
+    display: flex;
+}
+
+.item {
+    background-color: transparent;
+    min-width: 300px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ver {
+    background: linear-gradient(90deg, #0e0b3a, #231330);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.saiba-mais-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.saiba-mais-btn:hover {
+    background-color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+/* bones */
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    max-width: 9000px;
+}
+
+.product {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* video final */
+.mostruariovideo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.background-videofim {
+    width: 110%;
+    max-width: 1400px;
+}
+
+/* footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+footer .foot img {
+    width: 15px;
+    height: 15px;
+}
+
