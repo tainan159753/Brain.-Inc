@@ -11,34 +11,37 @@ window.addEventListener("scroll", function() {
   
   /* fotos de capa slide */
 
-  let currentSlide = 0;
+    let currentSlide = 0;
   let isPaused = false;
   const slides = document.querySelectorAll('.fotomas img');
   const totalSlides = slides.length;
   let intervalId;
-
+  
   function showSlide(index) {
     slides.forEach((slide) => {
       slide.classList.remove('active');
     });
     slides[index].classList.add('active');
   }
-
+  
   function nextSlide() {
     if (!isPaused) {
       currentSlide = (currentSlide + 1) % totalSlides;
       showSlide(currentSlide);
     }
   }
-
+  
   function prevSlide() {
     if (!isPaused) {
       currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
       showSlide(currentSlide);
     }
   }
-
+  
   intervalId = setInterval(nextSlide, 3500);
-
+  
   document.addEventListener('DOMContentLoaded', function () {
-    showSlide(currentSlide) })
+    showSlide(currentSlide);
+    // Inicia automaticamente o slide ao carregar a página
+    nextSlide();
+  });
