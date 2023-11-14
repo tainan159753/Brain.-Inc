@@ -45,3 +45,18 @@ window.addEventListener("scroll", function() {
     // Inicia automaticamente o slide ao carregar a página
     nextSlide();
   });
+
+ /* Teste */
+
+  document.addEventListener('DOMContentLoaded', function () {
+    new Glide('.glide', {
+        type: 'carousel',
+        perView: 3, // Ajuste o número de imagens a serem exibidas em telas maiores
+        breakpoints: {
+            768: {
+                perView: 1 // Número de imagens a serem exibidas em telas menores
+            }
+        }
+    }).mount();
+});
+
