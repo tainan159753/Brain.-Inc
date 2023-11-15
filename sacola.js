@@ -48,6 +48,6 @@ function finalizePurchase() {
     const cartTotal = document.querySelector('.cart-total');
 
     // Ocultar itens e mostrar mensagem
-    cartItems.innerHTML = '<p>Itens enviados com sucesso!! Obrigado por comprar na Brain.</p>';
+    cartItems.innerHTML = '<p>Preparando para o envio! Previsão de entrega: !2 dias úteis. Obrigado por comprar na Brain.</p>';
     cartTotal.style.display = 'none';
 }
