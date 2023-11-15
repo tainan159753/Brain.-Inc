@@ -232,34 +232,43 @@ aside p {
     display: block;
 }
 
-.image-text {
+.image-content {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     text-align: center;
+    transition: opacity 0.5s; /* Adiciona uma transição suave na opacidade */
 }
 
-.image-text h2 {
-    margin: 0;
+.image-container:hover .image-content {
+    opacity: 1;
 }
 
-.image-text p {
+.image-content h2,
+.image-content p,
+.image-content button {
     margin: 10px 0;
 }
 
-.image-text button {
+.image-content button {
     padding: 10px;
-    background-color: #000; /* Cor do botão preto */
+    background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 20px; /* Borda arredondada */
-    transition: background-color 0.3s; /* Efeito de transição na mudança de cor */
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
-.image-text button:hover {
-    background-color: #333; /* Cor do botão preto no hover */
+.image-content button:hover {
+    background-color: #333;
 }
