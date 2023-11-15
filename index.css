@@ -252,8 +252,14 @@ aside p {
 
 .image-text button {
     padding: 10px;
-    background-color: #3498db;
+    background-color: #000; /* Cor do botão preto */
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 20px; /* Borda arredondada */
+    transition: background-color 0.3s; /* Efeito de transição na mudança de cor */
+}
+
+.image-text button:hover {
+    background-color: #333; /* Cor do botão preto no hover */
 }
