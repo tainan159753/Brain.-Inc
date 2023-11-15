@@ -275,21 +275,15 @@ aside p {
 
 /* Bones a venda */
 
-.cart-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-.cart-items {
-    list-style: none;
-    padding: 0;
+.product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-.cart-items li {
+.product {
     width: 45%; /* Ajuste conforme necessário para a disposição desejada */
     background-color: #fff;
     padding: 20px;
@@ -298,33 +292,33 @@ aside p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cart-items img {
+.product img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.item-details {
+.product-details {
     margin-top: 15px;
 }
 
-.item-details h3 {
+.product-details h3 {
     margin: 0;
 }
 
-.item-details p {
+.product-details p {
     margin: 10px 0;
 }
 
-.item-price {
+.product-price {
     font-weight: bold;
 }
 
-.remove-item {
+.add-to-cart {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #ff4d4d;
+    background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -332,12 +326,12 @@ aside p {
     transition: background-color 0.3s;
 }
 
-.remove-item:hover {
-    background-color: #cc0000;
+.add-to-cart:hover {
+    background-color: #333;
 }
 
-#total-price {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20px;
+@media screen and (max-width: 767px) {
+    .product {
+        width: 100%;
+    }
 }
