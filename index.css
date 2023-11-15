@@ -275,15 +275,21 @@ aside p {
 
 /* Bones a venda */
 
-.product-container {
+.cart-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
-    margin: 20px auto;
 }
 
-.product {
+.cart-items li {
     width: 45%; /* Ajuste conforme necessário para a disposição desejada */
     background-color: #fff;
     padding: 20px;
@@ -292,33 +298,33 @@ aside p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product img {
+.cart-items img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.product-details {
+.item-details {
     margin-top: 15px;
 }
 
-.product-details h3 {
+.item-details h3 {
     margin: 0;
 }
 
-.product-details p {
+.item-details p {
     margin: 10px 0;
 }
 
-.product-price {
+.item-price {
     font-weight: bold;
 }
 
-.add-to-cart {
+.remove-item {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #000;
+    background-color: #ff4d4d;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -326,6 +332,12 @@ aside p {
     transition: background-color 0.3s;
 }
 
-.add-to-cart:hover {
-    background-color: #333;
+.remove-item:hover {
+    background-color: #cc0000;
+}
+
+#total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
 }
