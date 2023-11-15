@@ -43,7 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+function finalizePurchase() {
+    const cartItems = document.querySelector('.cart-items');
+    const cartTotal = document.querySelector('.cart-total');
 
-
-
-
+    // Ocultar itens e mostrar mensagem
+    cartItems.innerHTML = '<p>Itens enviados com sucesso!! Obrigado por comprar na Brain.</p>';
+    cartTotal.style.display = 'none';
+}
