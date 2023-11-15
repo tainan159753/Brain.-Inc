@@ -98,3 +98,19 @@ nav a {
     cursor: pointer;
     border-radius: 4px;
 }
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #333;
+}
