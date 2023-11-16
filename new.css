@@ -44,50 +44,44 @@ nav a {
 
 /* Texto sob foto */
 
-.Novidade {
-    background: #f0f0f0;
-}
-
-.novi-container {
-    position: relative;
-    text-align: center;
-    margin-top: 0;
-}
-
 .fotodump {
     position: relative;
-    display: inline-block;
+    text-align: center;
+    padding: 20px;
 }
 
 .fotodump img {
-    display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .fotodump h1 {
-    margin-top: 90;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: rgb(255, 255, 255);
-    padding: 8px;
-    font-size: 50px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .txt1 {
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    width: 60%;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    margin-top: 120px;
-    z-index: 1;
-    text-align: left;
+    color: #000;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .fotodump h1 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    .txt1 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
 }
 
 /* capa masculina */
@@ -96,23 +90,33 @@ nav a {
     justify-content: center;
 }
 
+.fotomas img {
+    max-width: 100%; /* Ajusta a largura da imagem para ser no máximo 100% do contêiner */
+    height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+}
+
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .fotomas {
+        flex-direction: column; /* Altera a direção do flex para coluna em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+}
+
 /* video */
 .video-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    text-align: center;
     margin: 20px;
 }
 
 .background-video {
     width: 100%;
-    max-width: 1400px;
+    max-width: 600px; /* ajuste conforme necessário */
     border-radius: 10px;
-}
-
-.video-container {
-    text-align: center;
 }
 
 .p1 {
@@ -124,11 +128,10 @@ nav a {
 }
 
 h1 {
-    text-align: center;
     font-size: 28px;
     font-weight: bold;
     color: #000;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .p2 {
@@ -158,29 +161,42 @@ h1 {
     background-color: #333;
 }
 
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .background-video {
+        max-width: 100%;
+    }
+
+    .p1 {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .p2 {
+        font-size: 14px;
+    }
+}
+
 /* mostruario masculino*/
 .mostruario-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    justify-content: center;
 }
 
 .item {
     background-color: transparent;
     min-width: 300px;
+    margin: 10px; /* Adiciona margens entre os itens */
 }
 
 .item img {
     max-width: 100%;
     height: auto;
-}
-
-.ver {
-    background: linear-gradient(90deg, #0e0b3a, #231330);
-    padding: 12px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .container {
@@ -203,8 +219,15 @@ h1 {
     background-color: #333;
 }
 
-p {
-    text-align: center;
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .mostruario-container {
+        justify-content: center;
+    }
+
+    .item {
+        min-width: 100%; /* Faz com que os itens ocupem 100% da largura em telas menores */
+    }
 }
 
 /* capa feminina */
@@ -213,29 +236,36 @@ p {
     justify-content: center;
 }
 
+.fotofem img {
+    max-width: 100%; /* Ajusta a largura da imagem para ser no máximo 100% do contêiner */
+    height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+}
+
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .fotofem {
+        flex-direction: column; /* Altera a direção do flex para coluna em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+}
+
+
 /* mostruario feminino */
 .mostruariofem-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    justify-content: center;
 }
 
 .item {
     background-color: transparent;
     min-width: 300px;
+    margin: 10px; /* Adiciona margens entre os itens */
 }
 
 .item img {
     max-width: 100%;
     height: auto;
-}
-
-.ver {
-    background: linear-gradient(90deg, #0e0b3a, #231330);
-    padding: 12px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .container {
@@ -258,8 +288,11 @@ p {
     background-color: #333;
 }
 
-p {
-    text-align: center;
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .item {
+        min-width: 100%; /* Faz com que os itens ocupem 100% da largura em telas menores */
+    }
 }
 
 /* bones */
@@ -289,16 +322,17 @@ p {
 /* video final */
 .mostruariovideo-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
     margin: 20px;
 }
 
 .background-videofim {
-    width: 110%;
+    width: 100%;
     max-width: 1400px;
+    border-radius: 10px;
 }
+
 
 /* footer */
 footer {
@@ -321,3 +355,27 @@ footer .foot img {
     height: 15px;
 }
 
+
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    .fotodump h1 {
+        font-size: 30px;
+    }
+
+    .txt1 {
+        font-size: 16px;
+    }
+
+    .fotomas img {
+        max-width: 80%;
+    }
+
+    .item {
+        min-width: 100%;
+    }
+
+    .saiba-mais-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
