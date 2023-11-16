@@ -1,4 +1,11 @@
 /* header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 header {
     background-color: #ffffff;
     padding: 7px;
@@ -33,13 +40,6 @@ nav li {
 nav a {
     text-decoration: none;
     color: #000000;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 /* Texto sob foto */
