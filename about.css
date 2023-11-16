@@ -1,152 +1,173 @@
-
-*{
+* {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 /* header */
 header {
-background-color: #ffffff;
-padding: 3px;
-height: 50px;
-/* padding-bottom: -30px; */
+    background-color: #ffffff;
+    padding: 3px;
+    height: 50px;
 }
 
 .hidden-header {
-display: none;
+    display: none;
 }
 
 .header-fixed {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-background-color: #fff; /* Cor de fundo desejada */
-padding: 3px; /* Alterado o valor do padding para 7px */
-z-index: 999; /* Certifique-se de que está na parte superior */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 3px;
+    z-index: 999;
 }
 
 nav ul {
-list-style: none;
-padding: 0;
-/* margin-left: 10%; */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap: 3px;
-font-size: 25px;
-
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+    font-size: 25px;
+    margin: 0; /* Removido margin-left */
 }
 
 nav li {
-/* display: flex; */
-margin-right: -10px;
-text-align: center;
-margin-left: 130px;
-font-size: 25px;
+    margin-right: 0; /* Alterado de -10px para 0 */
+    text-align: center;
+    margin-left: 0; /* Alterado de 130px para 0 */
+    font-size: 25px;
 }
 
 nav a {
-text-decoration: none;
-color: #000000;
-font-size: 16px;
-}
-nav h1{
-font-size: 33px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
 }
 
-/*card */
-
-.card{
-background-color: #000000;
-width: 180px;
-height: 260px;
-border-radius: 12px;
-box-shadow: 5px 5px 12px #969494aa;
-padding: 8px;
-margin-left: 60px;
-display: inline-block;
-margin-top: 40px;
-
+nav h1 {
+    font-size: 33px;
 }
-.card h1{
-font-size: 1.2rem;
-text-align: center;
-color: #fff;
-font-family: fantasy;
 
+/* card */
+.card {
+    background-color: #000000;
+    width: 100%; /* Alterado de 180px para 100% */
+    max-width: 180px; /* Adicionado para limitar a largura máxima */
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px #969494aa;
+    padding: 8px;
+    margin-left: auto; /* Alterado de 60px para auto */
+    margin-right: auto; /* Adicionado para centralizar */
+    display: block; /* Alterado de inline-block para block */
+    margin-top: 40px;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-family: fantasy;
 }
 
 .card h2 {
-font-size:  .9rem;
-color: #fff; 
-text-align: center;
-font-family: monospace;
-}
-.card span{
-font-size: 1.2rem;
-text-align: center;
-
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
 }
 
-.card button{
-background-color: green;
-height: 30px;
-border: none;
-border-radius: 10;
-padding: 4px;
-width: 80%;
-color: #fff;
-font-size: irem;
-font-weight: bold;
-cursor: pointer;
-text-decoration: none;
-text-align: center;
-box-shadow: inset;
-margin-left: 10px;
-
-}
-.card img{
-border-radius: 10px;
-width: 160px;
+.card span {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.transição h1{
-background-color: rgb(0, 0, 0);
-text-align: center;
-height: 80px;
-font-family: fantasy;
-color: #fff;
-
+.card button {
+    background-color: green;
+    height: 30px;
+    border: none;
+    border-radius: 10; /* Adicionado 'px' */
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem; /* Adicionado 'rem' */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: inset;
+    margin-left: auto; /* Adicionado 'auto' */
+    margin-right: auto; /* Adicionado 'auto' */
+    display: block; /* Adicionado 'block' */
+    margin-top: 10px; /* Adicionado para separação do texto abaixo */
 }
-.ETICA{
-background-color: rgb(0, 0, 0);
-text-align: center;
-height: 80px;
-font-family: fantasy;
-color: #fff;  
-margin-top: 30px;
-}
-.cardgeral{
-background-color: #fff;
 
+.card img {
+    border-radius: 10px;
+    width: 100%; /* Alterado de 160px para 100% */
+    max-width: 160px;
+}
+
+.transição h1 {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    height: 80px;
+    font-family: fantasy;
+    color: #fff;
+}
+
+.ETICA {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    height: 80px;
+    font-family: fantasy;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.cardgeral {
+    background-color: #fff;
 }
 
 .transição2 {
-
-font-family: fantasy;
-padding: 3px;
-margin-left: 40px;
-margin-top: 10px;
+    font-family: fantasy;
+    padding: 3px;
+    margin-left: auto; /* Adicionado 'auto' */
+    margin-right: auto; /* Adicionado 'auto' */
+    margin-top: 10px;
 }
 
 footer {
-  background-color: #000000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-family: fantasy;
-margin-bottom: -75px;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: fantasy;
+    margin-bottom: -75px;
+}
 
-  
+/* Adicionando regra de estilo para telas menores */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card button {
+        width: 100%;
+    }
 }
